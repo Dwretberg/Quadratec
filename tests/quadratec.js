@@ -24,9 +24,13 @@ module.exports = {
     },
     'checking search tabs': browser => {
         bucket.searchTabs('@shopCategory', '@categoryHdr')
+        .expect.element('@bumpers').to.be.present.before(3000)
         bucket.searchTabs('@shopBrand', '@brandsHdr')
+        .expect.element('@brand').to.be.present.before(3000)
         bucket.searchTabs('@shopJeep', '@jeepHdr')
+        .expect.element('@jeep').to.be.present.before(3000)
         bucket.searchTabs('@newHot', '@newHotHdr')
+
         bucket.searchTabs('@specialOffers', '@offersHdr')
         
     },
