@@ -5,9 +5,9 @@
 
   <testsuite name="quadratec"
     errors="0" failures="0" hostname="" id="" package="quadratec" skipped="0"
-    tests="4" time="42.13" timestamp="Wed, 02 Jan 2019 18:27:43 GMT">
+    tests="4" time="48.95" timestamp="Wed, 02 Jan 2019 18:30:14 GMT">
   
-    <testcase name="find elements on home page" classname="quadratec" time="4.677" assertions="22">
+    <testcase name="find elements on home page" classname="quadratec" time="4.427" assertions="22">
 
     
 
@@ -54,7 +54,7 @@
     
     </testcase>
   
-    <testcase name="loggin in search for item and add product to wishlist and cart" classname="quadratec" time="19.33" assertions="23">
+    <testcase name="loggin in search for item and add product to wishlist and cart" classname="quadratec" time="26.33" assertions="23">
 
     
 
@@ -103,7 +103,7 @@
     
     </testcase>
   
-    <testcase name="checking search tabs" classname="quadratec" time="3.417" assertions="9">
+    <testcase name="checking search tabs" classname="quadratec" time="3.621" assertions="9">
 
     
 
@@ -124,7 +124,7 @@
     
     </testcase>
   
-    <testcase name="edit name" classname="quadratec" time="14.71" assertions="15">
+    <testcase name="edit name" classname="quadratec" time="14.57" assertions="15">
 
     
 
