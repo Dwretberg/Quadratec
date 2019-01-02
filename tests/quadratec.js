@@ -24,13 +24,12 @@ module.exports = {
     },
     'checking search tabs': browser => {
         bucket.searchTabs('@shopCategory', '@categoryHdr')
-        .expect.element('@bumpers').to.be.present.before(3000)
+        .expect.element('@bumpers').to.be.present.before(5000)
         bucket.searchTabs('@shopBrand', '@brandsHdr')
-        .expect.element('@brand').to.be.present.before(3000)
+        .expect.element('@brand').to.be.present.before(5000)
         bucket.searchTabs('@shopJeep', '@jeepHdr')
-        .expect.element('@jeep').to.be.present.before(3000)
+        .expect.element('@jeep').to.be.present.before(5000)
         bucket.searchTabs('@newHot', '@newHotHdr')
-
         bucket.searchTabs('@specialOffers', '@offersHdr')
         
     },
@@ -39,6 +38,13 @@ module.exports = {
         bucket.editName('Ripster1', 'Bolton1', 'Streetsharks1!', 'Ripster', 'Bolton')
         bucket.editPassword('Ab123456789', 'Streetsharks1!')
         bucket.logOut()
+    },
+
+    'checking order history and rate products': browser => {
+        bucket.logIn('ripsterbolton@gmail.com', 'Streetsharks1!')
+        bucket.orderHistoryAndReviews()
+        bucket.logOut()
+
     },
 
 
