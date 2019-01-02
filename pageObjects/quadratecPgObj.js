@@ -4,6 +4,7 @@ var quadratecCommands = {
     this
     .click('@cartBtn')
     .expect.element('@productNumber').to.be.present.before(5000)
+    this.expect.element('@quantityBtn').to.be.present.before(5000)
     this.click('@cartRemoveBtn')
     .expect.element('@productNumber').to.not.be.present.after(5000)
     return this
@@ -170,6 +171,7 @@ module.exports = {
       wishListBtn: '[id="wishlist-add-btn"]',
       addToCartBtn: '[class="btn btn-success form-submit btn-block"]',
       wishListRemoveBtn: '[id="wishlist-pg-remove-btn"]',
+      quantityBtn: '[id="edit-edit-quantity-0"]',
 
       shopCategory: '#navbar-collapse-1 > ul > li:nth-child(2) > a',
       categoryHdr: 'div.col-sm-5 > div.dropdown-heading',
