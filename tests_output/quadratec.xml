@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="quadratec"
+    errors="1" failures="0" hostname="" id="" package="quadratec" skipped="0"
+    tests="1" time="0.04200" timestamp="Sun, 23 Dec 2018 18:23:38 GMT">
+  
+    <testcase name="loggin in and cheching account functions" classname="quadratec" time="0.04200" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Quadratec / loggin in and cheching account functions]:
+
+  TypeError: Cannot read property &#39;be&#39; of undefined
+    at Object.loggin in and cheching account functions (/Users/jakewretberg/Desktop/Devmountain/quadratec/tests/quadratec.js:63:57)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at process.internalTickCallback (internal/process/next_tick.js:70:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
