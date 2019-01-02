@@ -5,6 +5,11 @@ var quadratecCommands = {
     .click('@cartBtn')
     .expect.element('@productNumber').to.be.present.before(5000)
     this.expect.element('@quantityBtn').to.be.present.before(5000)
+    this.expect.element('@continueShopBtn').to.be.present.before(5000)
+    this.expect.element('@updateCartBtn').to.be.present.before(5000)
+    this.expect.element('@checkout').to.be.present.before(5000)
+    this.expect.element('@orderSummary').to.be.present.before(5000)
+    this.expect.element('@payPalCredit').to.be.present.before(5000)
     this.click('@cartRemoveBtn')
     .expect.element('@productNumber').to.not.be.present.after(5000)
     return this
@@ -73,7 +78,7 @@ var quadratecCommands = {
     this
     .click('@myAccountBtn')
     .click('@logOutBtn')
-    this.expect.element('@freeCatalog').to.be.present.before(6000)
+    this.expect.element('@shopByCategory').to.be.present.before(6000)
     return this
   },
 
@@ -172,6 +177,11 @@ module.exports = {
       addToCartBtn: '[class="btn btn-success form-submit btn-block"]',
       wishListRemoveBtn: '[id="wishlist-pg-remove-btn"]',
       quantityBtn: '[id="edit-edit-quantity-0"]',
+      continueShopBtn: '[class="btn btn-success"]',
+      updateCartBtn: '[value="Update cart"]',
+      checkout: '[class="btn-success btn form-submit"]',
+      orderSummary: '[id="quadratec-order-summary-pane"]',
+      payPalCredit: '[class="ad-wrap pp-af7083af-f80f-5513-aa3d-b73dbee6a305__wrapper"]',
 
       shopCategory: '#navbar-collapse-1 > ul > li:nth-child(2) > a',
       categoryHdr: 'div.col-sm-5 > div.dropdown-heading',
