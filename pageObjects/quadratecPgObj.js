@@ -3,23 +3,23 @@ var quadratecCommands = {
   deleteFromCart: function() {
     this
     .click('@cartBtn')
-    .expect.element('@productNumber').to.be.present.before(5000)
-    this.expect.element('@quantityBtn').to.be.present.before(5000)
-    this.expect.element('@continueShopBtn').to.be.present.before(5000)
-    this.expect.element('@updateCartBtn').to.be.present.before(5000)
-    this.expect.element('@checkout').to.be.present.before(5000)
-    this.expect.element('@orderSummary').to.be.present.before(5000)
-    this.expect.element('@payPalCredit').to.be.present.before(5000)
+    .expect.element('@productNumber').to.be.present.before(10000)
+    this.expect.element('@quantityBtn').to.be.present.before(10000)
+    this.expect.element('@continueShopBtn').to.be.present.before(10000)
+    this.expect.element('@updateCartBtn').to.be.present.before(10000)
+    this.expect.element('@checkout').to.be.present.before(10000)
+    this.expect.element('@orderSummary').to.be.present.before(10000)
+    this.expect.element('@payPalCredit').to.be.present.before(10000)
     this.click('@cartRemoveBtn')
-    .expect.element('@productNumber').to.not.be.present.after(5000)
+    .expect.element('@productNumber').to.not.be.present.after(10000)
     return this
   },
   editName: function(firstName, lastName, password, originalFirstName, originalLastName) {
     this
     .click('@accountSetBtn')
-    .expect.element('@accountSetPg').to.be.present.before(5000)
+    .expect.element('@accountSetPg').to.be.present.before(10000)
     this.click('@nameEditBtn')
-    .expect.element('@firstNameFld').to.be.present.before(5000)
+    .expect.element('@firstNameFld').to.be.present.before(10000)
     this.clearValue('@firstNameFld')
     .clearValue('@firstNameFld')
     .setValue('@firstNameFld', firstName)
@@ -27,7 +27,7 @@ var quadratecCommands = {
     .setValue('@lastNameFld', lastName)
     .setValue('@passwordFld', password)
     .click('@updateBtn')
-    .expect.element('@accountSetPg').to.be.present.before(5000)
+    .expect.element('@accountSetPg').to.be.present.before(10000)
     this.click('@nameEditBtn')
     this.clearValue('@firstNameFld')
     .setValue('@firstNameFld', originalFirstName)
@@ -35,7 +35,7 @@ var quadratecCommands = {
     .setValue('@lastNameFld', originalLastName)
     .setValue('@passwordFld', password)
     .click('@updateBtn')
-    .expect.element('@accountSetPg').to.be.present.before(5000)
+    .expect.element('@accountSetPg').to.be.present.before(10000)
     return this
   },
 
@@ -57,20 +57,20 @@ var quadratecCommands = {
   wishListAndCart: function() {
     this
     .click('@product')
-    .expect.element('@wishListBtn').to.be.present.before(5000)
+    .expect.element('@wishListBtn').to.be.present.before(10000)
     this.click('@wishListBtn')
     .click('@myAccountBtn')
     .click('@wishList')
     .expect.element('@wishListPg').to.be.present
-    this.expect.element('@product').to.be.present.before(5000)
+    this.expect.element('@product').to.be.present.before(10000)
     this.click('@addToCartBtn')
     .expect.element('@productNumber').to.be.present.before(4000)
     this.click('@myAccountBtn')
     .click('@wishList')
     .expect.element('@wishListPg').to.be.present
-    this.expect.element('@product').to.be.present.before(5000)
+    this.expect.element('@product').to.be.present.before(10000)
    this .click('@wishListRemoveBtn')
-   this .expect.element('@product').to.not.be.present.after(5000)
+   this .expect.element('@product').to.not.be.present.after(10000)
     return this
   },
 
@@ -78,7 +78,7 @@ var quadratecCommands = {
     this
     .click('@myAccountBtn')
     .click('@logOutBtn')
-    this.expect.element('@shopByCategory').to.be.present.before(7000)
+    this.expect.element('@shopByCategory').to.be.present.before(10000)
     return this
   },
 
@@ -86,7 +86,7 @@ var quadratecCommands = {
     this
     .click('@myAccountBtn')
     .click('@logInBtn')
-    .expect.element('@logInPassword').to.be.present.before(7000)
+    .expect.element('@logInPassword').to.be.present.before(10000)
     this.assert.urlEquals('https://www.quadratec.com/user')
     .assert.elementPresent('@logInEmail')
     .assert.elementPresent('@logInPassword')
@@ -127,29 +127,29 @@ var quadratecCommands = {
   editPassword: function(newPassword, password,) {
     this
     .click('@passwordEditBtn')
-    .expect.element('@newPasswordFld').to.be.present.before(5000)
+    .expect.element('@newPasswordFld').to.be.present.before(10000)
     this.setValue('@newPasswordFld', newPassword)
     .setValue('@confirmPasswordFld', newPassword)
     .setValue('@currentPasswordFld', password)
     .click('@updateBtn')
-    .expect.element('@passwordEditBtn').to.be.present.before(5000)
+    .expect.element('@passwordEditBtn').to.be.present.before(10000)
     this.click('@passwordEditBtn')
-    this.expect.element('@newPasswordFld').to.be.present.before(5000)
+    this.expect.element('@newPasswordFld').to.be.present.before(10000)
     this.setValue('@newPasswordFld', password)
     .setValue('@confirmPasswordFld', password)
     .setValue('@currentPasswordFld', newPassword)
     .click('@updateBtn')
-    .expect.element('@passwordEditBtn').to.be.present.before(5000)
+    .expect.element('@passwordEditBtn').to.be.present.before(10000)
     return this
   },
   
   orderHistoryAndReviews: function() {
     this
     .click('@orderHistory')
-    .expect.element('@completedOrders').to.be.present.before(5000)
+    .expect.element('@completedOrders').to.be.present.before(10000)
     this.click('@myAccountBtn')
     .click('@myReviewsBtn')
-    .expect.element('@rateProdutsHdr').to.be.present.before(5000)
+    .expect.element('@rateProdutsHdr').to.be.present.before(10000)
     return this
   },
 
