@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="5">
 
   <testsuite name="quadratec"
-    errors="0" failures="0" hostname="" id="" package="quadratec" skipped="0"
-    tests="5" time="70.47" timestamp="Fri, 11 Jan 2019 18:45:22 GMT">
+    errors="0" failures="1" hostname="" id="" package="quadratec" skipped="0"
+    tests="5" time="60.20" timestamp="Fri, 11 Jan 2019 19:03:01 GMT">
   
-    <testcase name="find elements on home page" classname="quadratec" time="5.149" assertions="22">
+    <testcase name="find elements on home page" classname="quadratec" time="5.931" assertions="22">
 
     
 
@@ -54,7 +54,7 @@
     
     </testcase>
   
-    <testcase name="loggin in search for item and add product to wishlist and cart" classname="quadratec" time="24.99" assertions="24">
+    <testcase name="loggin in search for item and add product to wishlist and cart" classname="quadratec" time="25.52" assertions="24">
 
     
 
@@ -105,7 +105,7 @@
     
     </testcase>
   
-    <testcase name="checking search tabs" classname="quadratec" time="4.725" assertions="9">
+    <testcase name="checking search tabs" classname="quadratec" time="4.803" assertions="9">
 
     
 
@@ -126,7 +126,7 @@
     
     </testcase>
   
-    <testcase name="edit name" classname="quadratec" time="26.17" assertions="16">
+    <testcase name="edit name" classname="quadratec" time="20.04" assertions="16">
 
     
 
@@ -161,7 +161,7 @@
     
     </testcase>
   
-    <testcase name="checking order history and rate products" classname="quadratec" time="9.428" assertions="10">
+    <testcase name="checking order history and rate products" classname="quadratec" time="3.903" assertions="7">
 
     
 
@@ -173,13 +173,8 @@
 
     
 
-    
-
-    
-
-    
-
-    
+      <failure message="Testing if the URL equals &#34;https://www.quadratec.com/account&#34;.">    at Page.logIn (/Users/jakewretberg/Desktop/Devmountain/quadratec/pageObjects/quadratecPgObj.js:97:13)
+    at Object.checking order history and rate products (/Users/jakewretberg/Desktop/Devmountain/quadratec/tests/quadratec.js:44:16)</failure>
 
     
     </testcase>
